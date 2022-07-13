@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "../../styles/mystyle.module.css";
-import * as Keys from "../../keys.js";
+// import * as Keys from "../../keys.js";
 
 function KakaoLogin() {
-  const KAKAO_AUTH_URL = `https://kauth.kakao.com/oauth/authorize?client_id=${Keys.KAKAO_CLIENT_ID}&redirect_uri=${Keys.KAKAO_REDIRECT_URI}&response_type=code`;
+  const KAKAO_AUTH_URL = `https://kauth.kakao.com/oauth/authorize?client_id=${process.env.KAKAO_CLIENT_ID}&redirect_uri=${process.env.KAKAO_REDIRECT_URI}&response_type=code`;
 
   return (
     <>

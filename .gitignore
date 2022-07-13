@@ -4,6 +4,7 @@ node_modules
 # env
 back/.env
 front/src/keys.js
+front/.env
 
 # config
 back/src/config/

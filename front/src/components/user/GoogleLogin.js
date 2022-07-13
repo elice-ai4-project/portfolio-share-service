@@ -3,14 +3,14 @@ import { GoogleLogin } from "react-google-login";
 import { useNavigate } from "react-router-dom";
 
 import * as Api from "../../api";
-import * as Keys from "../../keys.js";
+// import * as Keys from "../../keys.js";
 import { DispatchContext } from "../../App";
 
 function GLogin() {
   const navigate = useNavigate();
   const dispatch = useContext(DispatchContext);
 
-  const clientId = Keys.GOOGLE_CLIENT_ID;
+  const clientId = process.env.GOOGLE_CLIENT_ID;
 
   async function onSuccess(googleData) {
     try {
